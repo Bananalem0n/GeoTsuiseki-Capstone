@@ -1,9 +1,7 @@
 # GeoTsuiseki - Product Tracking & Partner Management Platform
 
 <div align="center">
-
-![GeoTsuiseki Logo](./front-end/public/favicon.svg)
-
+  
 A modern full-stack platform for product tracking and partner management with QR code verification.
 
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
@@ -11,12 +9,6 @@ A modern full-stack platform for product tracking and partner management with QR
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-</div>
-
-## 📸 Screenshots
-
-<div align="center">
-  <img src="./docs/dashboard.png" width="80%" alt="Dashboard" />
 </div>
 
 ## ✨ Features
