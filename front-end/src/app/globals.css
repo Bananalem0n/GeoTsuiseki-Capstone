@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #ffffff;
+  --background: #0a0a0a;
+  --primary: #6366f1;
+  --primary-hover: #818cf8;
+  --card-bg: rgba(30, 30, 40, 0.6);
+  --card-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.7);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: #6366f1;
+}
+
+.btn-primary:focus {
+  outline: none;
+  ring: 2px solid #6366f1;
+  ring-offset: 2px;
+}
+
+.btn-secondary {
+  background-color: #1f2937;
+  color: white;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: 1px solid #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #374151;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: #ef4444;
+}
+
+/* Input styles */
+.input {
+  width: 100%;
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  transition: all 0.2s;
+}
+
+.input::placeholder {
+  color: #6b7280;
+}
+
+.input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #6366f1;
+}
+
+/* Animated gradient */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #6366f1, #8b5cf6, #06b6d4, #6366f1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
